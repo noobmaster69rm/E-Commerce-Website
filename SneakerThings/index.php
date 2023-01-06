@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style2.css">
+
 <?php
 
 //Include the PHP functions to be used on the page
@@ -16,8 +18,7 @@ Navbar();
 
 ?>
 
-
-<!-- Site footer -->
+    <!-- Site footer -->
 <?php
 
 //Output the footer

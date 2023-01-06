@@ -13,6 +13,8 @@
 }
 
 body{
+    background: url("img.png") no-repeat;
+    background-size: cover;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -73,12 +75,11 @@ header{
     opacity: 0.6;
 }
 
-.background{
-    background-image: url("img.png");
-    width: 1400px;
-    height: 933px;
-
+.center-text{
+    height: 50%;
+    width: 50%;
 }
+
 
 footer{
     width: 100%;
@@ -89,7 +90,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 4%;
+    padding: 15px 4%;
     transition: .3s;
 }
 
