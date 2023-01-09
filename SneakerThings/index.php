@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style.css">
 
 <?php
 
@@ -17,6 +17,15 @@ outputHeader("Home");
 Navbar();
 
 ?>
+
+<div class="container">
+    <div class="middlelogo">
+        <p>SneakerThings</p>
+        <div class="shopnow">
+            <a href="shop.php">Shop now -></a>
+        </div>
+    </div>
+</div>
 
     <!-- Site footer -->
 <?php

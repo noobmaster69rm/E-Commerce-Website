@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'rowdiesregular';
+    src: url('rowdies-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -73,23 +81,16 @@ header{
     opacity: 0.6;
 }
 
-.background{
-    background-image: url("img.png");
-    width: 1400px;
-    height: 933px;
-
-}
-
 footer{
     width: 100%;
     bottom: 0;
     z-index: 1000;
-    position: fixed;
+    position: relative;
     background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 4%;
+    padding: 30px 4%;
     transition: .3s;
 }
 
@@ -121,4 +122,46 @@ footer{
         right: 0;
         flex-direction: column;
     }
+}
+
+.container{
+    background-image: url("img.png");
+    width: 1500px;
+    height: 933px;
+    display: flex;
+    opacity: .85;
+}
+
+.middlelogo{
+    display: flex;
+    width: 25%;
+    height: 12%;
+    margin: -25px 0 0 -160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.middlelogo p{
+    font-family: rowdiesregular, serif;
+    color: white;
+    font-size: 42px;
+}
+
+.shopnow{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+}
+
+.shopnow a{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.shopnow a:hover{
+    color: black;
+    transition: .2s;
 }
