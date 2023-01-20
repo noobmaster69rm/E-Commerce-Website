@@ -49,7 +49,7 @@ Navbar();
                 <p class="new-text2">
                     Already have an account?
                     <a href="login.php" class="register2">
-                        Login ->
+                        Login >
                     </a>
                 </p>
             </div>

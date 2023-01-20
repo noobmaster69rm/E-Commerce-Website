@@ -13,7 +13,7 @@ function outputHeader($title){
 function Navbar()
 {
     echo '<header>';
-    echo '	<a href="#" class="logo">Shoes</a>';
+    echo '	<a href="index.php" class="logo">SneakerThings</a>';
     echo '  <div id="menu"><i class="fa-sharp fa-solid fa-bars-sort"></i></div>';
 
     echo '	<ul class="navbar">';
@@ -33,6 +33,7 @@ function Navbar()
     echo '  <div class="icons">';
     echo '    <a href="cart.php"><img src="assets/cart-svgrepo-com.svg" alt=""></a>';
     echo '    <a href="login.php"><img src="assets/profile-user-avatar-man-person-svgrepo-com.svg" alt=""></a>';
+    echo '    <a href="account.php"><img src="assets/edit-attributes-svgrepo-com.svg" alt=""></a>';
     echo '  </div>';
     echo '</header>';
 }

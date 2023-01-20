@@ -38,8 +38,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 4%;
+    padding: 22px 2%;
     transition: .3s;
+}
+
+.logo {
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 #menu{
@@ -477,12 +483,12 @@ th:last-child{
 
 .main3{
     width: 30%;
-    height: 66%;
+    height: 80%;
     border-radius: 5px;
     background: white;
     position: relative;
     left: 35%;
-    top:20%;
+    top:15%;
 }
 
 .main3 .title {
@@ -496,7 +502,7 @@ th:last-child{
 }
 
 .main3 form{
-    padding: 30px 20px 25px 20px;
+    padding: 0 20px 25px 20px;
 }
 
 .main3 form .row{
@@ -539,4 +545,28 @@ th:last-child{
     background: #fa4545;
     transition: .25s;
     cursor: pointer;
+}
+
+.logout{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background: #fa4545;
+    border-radius: 5px;
+    left: 37%;
+    margin-top: 25px;
+}
+
+.logout a{
+    position: relative;
+    color: white;
+    top:20%;
+    left:20%;
+}
+
+.logout i{
+    position: relative;
+    color: white;
+    top: 20%;
+    left: 5%;
 }

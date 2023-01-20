@@ -35,8 +35,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 4%;
+    padding: 22px 2%;
     transition: .3s;
+}
+
+.logo {
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 #menu{
