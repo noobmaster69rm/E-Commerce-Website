@@ -16,6 +16,7 @@ outputHeader("Home");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
 
 <div class="container">

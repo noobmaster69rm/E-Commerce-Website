@@ -7,13 +7,8 @@ include('common.php');
 //Output header
 outputHeader("About");
 
+//Main body
 ?>
-
-<!-- Site header -->
-
-
-
-<!-- jeff about-us code-->
 
 <div class = "about-us">
     <br><h1>About Us</h1><br><br>

@@ -27,6 +27,7 @@ body{
     padding: 0;
 }
 
+/* Header */
 header{
     width: 100%;
     top: 0;
@@ -88,6 +89,7 @@ header{
     opacity: 0.6;
 }
 
+/* footer */
 footer{
     width: 100%;
     bottom: 0;
@@ -119,6 +121,8 @@ footer{
     opacity: 0.6;
 }
 
+/* flex to adapt to screen size change */
+
 @media (max-width: 800px) {
     header{
         padding: 15px 8%;
@@ -131,6 +135,7 @@ footer{
     }
 }
 
+/* Main body */
 .container{
     background-image: url("assets/img.png");
     width: 100%;

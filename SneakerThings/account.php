@@ -15,6 +15,7 @@ outputHeader("Profile");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
 <div class="frame3">
     <div class="main3">

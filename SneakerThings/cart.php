@@ -15,6 +15,7 @@ outputHeader("Cart");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
 
 <div class="main-container">

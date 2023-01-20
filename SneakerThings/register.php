@@ -15,6 +15,7 @@ outputHeader("Register");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
 <div class="frame2">
     <div class="main2">

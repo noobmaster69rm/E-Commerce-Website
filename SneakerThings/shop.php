@@ -11,7 +11,9 @@ outputHeader("Products");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
+
 <div class="big-container">
     <div class="sorting">
         <p>Sort by: <a href="#">Brand</a><a href="#">Price</a></p>
@@ -429,6 +431,94 @@ Navbar();
                     </div>
                 </div>
                 <!-- end of single product -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "bs-collection">
+    <div class = "bs-container">
+        <div class = "bs-collection-wrapper">
+            <h1 class="best-sellers">Recommendations</h1>
+            <p class = "text-light">Shop the best sellers of the season</p>
+            <div class="shop-product">
+                <!-- single product -->
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="assets/shoe-2.png" alt="product image">
+                        </div>
+                        <div class="product-btns">
+                            <button type="button" class="btn-cart"> add to cart <span>
+                     <i class="fas fa-plus"></i>
+                     </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="sm-title">SKECHERS</h2>
+                            <div class="rating">
+                        <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="far fa-star"></i>
+                        </span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-name">WOMEN'S SUMMITS UNO 232248-TPE</a>
+                        <p class="product-price">Rs 4,355.00</p>
+                        <p class="product-price">Rs 3,999.00</p>
+                    </div>
+                </div>
+                <!-- single product -->
+                <div class="product">
+                    <div class="product-content">
+                        <div class="product-img">
+                            <img src="assets/shoe-1.png" alt="product image">
+                        </div>
+                        <div class="product-btns">
+                            <button type="button" class="btn-cart"> add to cart <span>
+                        <i class="fas fa-plus"></i>
+                        </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="sm-title">SKECHERS</h2>
+                            <div class="rating">
+                        <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="fas fa-star"></i>
+                        </span>
+                                <span>
+                        <i class="far fa-star"></i>
+                        </span>
+                            </div>
+                        </div>
+                        <a href="#" class="product-name">Bounder-Intread 232377-BBK</a>
+                        <p class="product-price">Rs 3,815.00</p>
+                        <p class="product-price">Rs 3,433.5</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

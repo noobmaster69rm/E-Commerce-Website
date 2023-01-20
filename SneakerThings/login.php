@@ -15,6 +15,7 @@ outputHeader("Login");
 //Output the navigation bar
 Navbar();
 
+//Main body
 ?>
 <div class="frame">
     <div class="main">
