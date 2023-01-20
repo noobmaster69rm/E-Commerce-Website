@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
 
 <?php
 
@@ -10,7 +10,7 @@ outputHeader("Home");
 
 ?>
 
-    <!-- Site header -->
+<!-- Site header -->
 <?php
 
 //Output the navigation bar
@@ -27,7 +27,7 @@ Navbar();
     </div>
 </div>
 
-    <!-- Site footer -->
+<!-- Site footer -->
 <?php
 
 //Output the footer

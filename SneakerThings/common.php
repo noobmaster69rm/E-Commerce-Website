@@ -32,7 +32,7 @@ function Navbar()
 
     echo '  <div class="icons">';
     echo '    <a href="cart.php"><img src="assets/cart-svgrepo-com.svg" alt=""></a>';
-    echo '    <a href="account.php"><img src="assets/profile-user-avatar-man-person-svgrepo-com.svg" alt=""></a>';
+    echo '    <a href="login.php"><img src="assets/profile-user-avatar-man-person-svgrepo-com.svg" alt=""></a>';
     echo '  </div>';
     echo '</header>';
 }

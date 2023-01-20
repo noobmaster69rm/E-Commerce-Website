@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'rowdiesregular';
+    src: url('rowdies-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212
+}
+
+body{
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: var(--bg-color);
+    box-shadow: 0 2px 18px 0 rgb(129 162 182 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 4%;
+    transition: .3s;
+}
+
+#menu{
+    color: var(--text-color);
+    font-size: 32px;
+    z-index: 10001;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 12px;
+    padding: 10px 30px;
+    transition: all .4s ease;
+    border-radius: 30px;
+}
+
+.navbar a:hover{
+    background: var(--text-color);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons a{
+    color: var(--text-color);
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.icons a:hover{
+    opacity: 0.6;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    position: relative;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 4%;
+    transition: .3s;
+}
+
+.copyright-text{
+    margin-left: 20px;
+}
+
+.icons2{
+    display: inline-block;
+}
+
+.icons2 a{
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.icons2 a:hover{
+    opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+    header{
+        padding: 15px 8%;
+    }
+    .navbar{
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+    }
+}
+
+.container{
+    background-image: url("assets/img.png");
+    width: 100%;
+    height: 87%;
+    display: flex;
+}
+
+.middlelogo{
+    display: flex;
+    width: 25%;
+    height: 12%;
+    margin: -25px 0 0 -160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.middlelogo p{
+    font-family: rowdiesregular, serif;
+    color: white;
+    font-size: 42px;
+}
+
+.shopnow{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+}
+
+.shopnow a{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.shopnow a:hover{
+    color: black;
+    transition: .2s;
+}
+
+.columns {
+    float: left;
+    width: 30%;
+    margin-bottom: 17px;
+    padding: 0 9px;
+}
+.cards {
+    box-shadow: 0 5px 9px 0 rgba(33, 32, 32, 0.2);
+    margin: 25px 0 0 130px;
+    height: 28%;
+}
+.about-us {
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(89, 97, 100);
+    color: rgb(245, 245, 245);
+    height: 40%;
+}
+
+.containers {
+    padding: 0 17px;
+    text-align: center;
+}
+
+.titles {
+    color: rgba(128, 128, 128, 0.887);
+}
+.email {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 9px;
+    color: whitesmoke;
+    background-color: #fa4545;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+@media screen and (max-width:660px) {
+    .columns{
+        width: 100%;
+        display: block;
+    }
+
+}
+
+.main-container{
+    width: 100%;
+    height: 87%;
+    background: url("assets/img.png");
+}
+.cart-container{
+    position: relative;
+    left: 30%;
+    width: 36%;
+    height: 65%;
+    background: rgba(255, 255, 255, .95);
+}
+
+table{
+    border-collapse: collapse;
+}
+.cart-product{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total{
+    position: relative;
+    top:0;
+    left: 42%;
+    width: 24%;
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(255, 255, 255, .9);
+
+}
+.total table{
+    border-top: 2px solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align:right;
+
+}
+th:last-child{
+    text-align:right;
+
+}
+
+/* .first-product-container{
+    color: aqua;
+    align-items: center;
+} */
+
+.frame{
+    width: 100%;
+    height: 87%;
+    background: url("assets/img.png");
+}
+.main{
+    width: 30%;
+    height: 55%;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    left: 35%;
+    top:25%;
+}
+
+.main .title {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 100px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main form{
+    padding: 30px 20px 25px 20px;
+}
+
+.main form .row{
+    position: relative;
+    height: 45px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.main form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.main form .row i{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 50px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.main form .button input{
+    padding-left: 0;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+.main form .button input:hover{
+    background: #fa4545;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.new-text{
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+.register{
+    cursor: pointer;
+    margin-left: 5px;
+    color: black;
+    padding:10px;
+    border-radius: 30px;
+    text-decoration: underline;
+}
+
+.register:hover{
+    background: teal;
+    color: white;
+    transition: background .2s linear;
+}
+
+.frame2{
+    width: 100%;
+    height: 88%;
+    background: url("assets/img.png");
+}
+
+.main2{
+    width: 30%;
+    height: 87%;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    left: 35%;
+    top: 11%;
+}
+
+.main2 .title {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 100px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main2 form{
+    padding: 0 20px 25px 20px;
+}
+
+.main2 form .row{
+    position: relative;
+    height: 45px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.main2 form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.main2 form .row i{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 50px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.main2 form .button input{
+    padding-left: 0;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+.main2 form .button input:hover{
+    background: #fa4545;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.new-text2{
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.register2{
+    cursor: pointer;
+    margin-left: 5px;
+    color: black;
+    padding:10px;
+    border-radius: 30px;
+    text-decoration: underline;
+}
+
+.register2:hover{
+    background: teal;
+    color: white;
+    transition: background .2s linear;
+}
+
+.frame3{
+    width: 100%;
+    height: 87%;
+    background: url("assets/img.png");
+}
+
+.main3{
+    width: 30%;
+    height: 66%;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    left: 35%;
+    top:20%;
+}
+
+.main3 .title {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 100px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main3 form{
+    padding: 30px 20px 25px 20px;
+}
+
+.main3 form .row{
+    position: relative;
+    height: 45px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.main3 form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.main3 form .row i{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 50px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.main3 form .button input{
+    padding-left: 0;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+.main3 form .button input:hover{
+    background: #fa4545;
+    transition: .25s;
+    cursor: pointer;
+}

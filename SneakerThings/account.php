@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
 <?php
 
 //Include the PHP functions to be used on the page
@@ -16,6 +16,27 @@ outputHeader("Profile");
 Navbar();
 
 ?>
+<div class="frame3">
+    <div class="main3">
+        <div class="title"><span>Change Details</span></div>
+        <form action="#">
+            <div class="row">
+                <input type="password" placeholder="Enter current password" required>
+            </div>
+            <div class="row">
+                <input type="password" placeholder="Enter new password">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Enter new email">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Enter new address">
+            </div>
+            <div class="row button">
+                <input type="submit" placeholder="Login">
+            </div>
+    </div>
+</div>
 
 
 <!-- Site footer -->
