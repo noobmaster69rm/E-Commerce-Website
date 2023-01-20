@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="css/style2.css">
 <?php
 
 //Include the PHP functions to be used on the page
@@ -32,7 +32,7 @@ Navbar();
             <tr>
                 <td>
                     <div class ="cart-product">
-                        <img src="assets/shoe-3.png" alt = "cart product image">
+                        <img src="assets/images/shoe-3.png" alt = "cart product image">
                         <div>
                             <h4>SKECHERS</h4>
                             <p>WOMEN'S SUMMITS-NEXT WAVE</p>
@@ -50,7 +50,7 @@ Navbar();
             <tr>
                 <td>
                     <div class ="cart-product">
-                        <img src="assets/shoe-9.png" alt = "cart product image">
+                        <img src="assets/images/shoe-9.png" alt = "cart product image">
                         <div>
                             <h4>PUMA</h4>
                             <p>Mayze Mid Safari Wns Putty</p>
@@ -70,7 +70,7 @@ Navbar();
             <tr>
                 <td>
                     <div class ="cart-product" alt = "cart product image">
-                        <img src="assets/shoe-5.png">
+                        <img src="assets/images/shoe-5.png">
                         <div>
                             <h4>PUMA</h4>
                             <p>Cali Star Glam Sneakers Women</p>

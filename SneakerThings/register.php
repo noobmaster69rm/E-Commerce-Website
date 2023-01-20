@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="css/style2.css">
 <?php
 
 //Include the PHP functions to be used on the page

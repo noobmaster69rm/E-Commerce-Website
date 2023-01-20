@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <?php
 //Include the PHP functions to be used on the page
 include('common.php');
@@ -28,7 +28,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-1.png" alt="product image">
+                            <img src="assets/images/shoe-1.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -71,7 +71,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-2.png" alt="product image">
+                            <img src="assets/images/shoe-2.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -111,7 +111,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-3.png" alt="product image">
+                            <img src="assets/images/shoe-3.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -151,7 +151,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-4.png" alt="product image">
+                            <img src="assets/images/shoe-4.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -194,7 +194,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-5.png" alt="product image">
+                            <img src="assets/images/shoe-5.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -234,7 +234,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-6.png" alt="product image">
+                            <img src="assets/images/shoe-6.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -274,7 +274,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-7.png" alt="product image">
+                            <img src="assets/images/shoe-7.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -314,7 +314,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-8.png" alt="product image">
+                            <img src="assets/images/shoe-8.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -356,7 +356,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-9.png" alt="product image">
+                            <img src="assets/images/shoe-9.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -395,7 +395,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-10.png" alt="product image">
+                            <img src="assets/images/shoe-10.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -445,7 +445,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-2.png" alt="product image">
+                            <img src="assets/images/shoe-2.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>
@@ -484,7 +484,7 @@ Navbar();
                 <div class="product">
                     <div class="product-content">
                         <div class="product-img">
-                            <img src="assets/shoe-1.png" alt="product image">
+                            <img src="assets/images/shoe-1.png" alt="product image">
                         </div>
                         <div class="product-btns">
                             <button type="button" class="btn-cart"> add to cart <span>

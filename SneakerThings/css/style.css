@@ -331,10 +331,10 @@ img{
     padding: 3.2rem 0;
 }
 .product-col-left{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("assets/fashion-img-1.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/images/fashion-img-1.jpg") center/cover no-repeat;
 }
 .product-col-r-top{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("assets/fashion-img-2.png") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/images/fashion-img-2.png") center/cover no-repeat;
 }
 .product-col-r-bottom > div:first-child{
     background: #eaa001;
@@ -386,6 +386,11 @@ img{
     line-height: 1.5;
     opacity: 0.5;
     margin: 0.4rem 0
+}
+
+.bs-collection-wrapper p{
+    position: relative;
+    left: 42%;
 }
 
 
