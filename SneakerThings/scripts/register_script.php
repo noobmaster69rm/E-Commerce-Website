@@ -5,10 +5,8 @@ session_start();
 include('../vendor/autoload.php');
 
 $mongoClient = new MongoDB\Client("mongodb://localhost:27017");
-
 $db = $mongoClient->SneakerThings;
-
-$collection = $db->customer;
+$collection = $db->Customer;
 
 $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
 $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);

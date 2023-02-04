@@ -19,14 +19,14 @@ Navbar();
 <div class="frame">
     <div class="main">
         <div class="title"><span>Login</span></div>
-        <form action="#">
+        <form action="scripts/login_script.php" method="post">
             <div class="row">
                 <i class="fa-regular fa-user"></i>
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" id="log-email">
             </div>
             <div class="row">
                 <i class="fa-solid fa-fingerprint"></i>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" id="log-password">
             </div>
             <div class="row button">
                 <button id="log-btn" type="submit">Login</button>
