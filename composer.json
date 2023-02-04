@@ -1,0 +1,6 @@
+{
+    "require": {
+        "lcobucci/jwt": "^4.3",
+        "mongodb/mongodb": "^1.15"
+    }
+}

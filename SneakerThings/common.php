@@ -7,6 +7,7 @@ function outputHeader($title){
     echo '<meta charset="UTF-8">';
     echo '<meta name="viewport" content="width = device-width, initial-scale = 1">';
     echo '<script src="https://kit.fontawesome.com/9a86419779.js" crossorigin="anonymous"></script>';
+    echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>';
     echo '<body>';
 }
 

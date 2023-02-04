@@ -11,7 +11,6 @@ outputHeader("Login");
 
 <!-- Site header -->
 <?php
-
 //Output the navigation bar
 Navbar();
 
@@ -30,7 +29,7 @@ Navbar();
                 <input type="password" placeholder="Password">
             </div>
             <div class="row button">
-                <input type="submit" placeholder="Login">
+                <button id="log-btn" type="submit">Login</button>
                 <p class="new-text">
                     New here?
                     <a href="register.php" class="register">
