@@ -19,25 +19,25 @@ Navbar();
 ?>
 <div class="frame3">
     <div class="main3">
-        <div class="title"><span>Profile </span></div>
-        <form action="#">
+        <div class="title"><span>Profile</span></div>
+        <form action="scripts/account_script.php" method="post">
             <div class="row">
-                <input type="password" placeholder="Enter current password" required>
+                <input type="email" placeholder="Email" id="reg-email" name="email">
             </div>
             <div class="row">
-                <input type="password" placeholder="Enter new password">
+                <input type="password" placeholder="Enter current password" name="password" required>
             </div>
             <div class="row">
-                <input type="text" placeholder="Enter new email">
+                <input type="password" placeholder="Enter new password" name="password2">
             </div>
             <div class="row">
-                <input type="text" placeholder="Enter new address">
+                <input type="text" placeholder="Enter new address" name="address">
             </div>
             <div class="row">
-                <input type="text" placeholder="Enter new phone number">
+                <input type="text" placeholder="Enter new phone number" name="pnumber">
             </div>
             <div class="row button">
-                <input type="submit" placeholder="Login">
+                <button id="reg-btn" type="submit">Save</button>
             </div>
             <div class="Logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -45,6 +45,14 @@ Navbar();
             </div>
     </div>
 </div>
+
+<script>
+    let request = new XMLHttpRequest();
+    request.open();
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    request.send();
+</script>
 
 
 <!-- Site footer -->

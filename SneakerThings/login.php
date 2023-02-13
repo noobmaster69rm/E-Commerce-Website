@@ -41,6 +41,14 @@ Navbar();
     </div>
 </div>
 
+<script src="js/register.js">
+    let request = new XMLHttpRequest();
+    request.open();
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    request.send();
+</script>
+
 <!-- Site footer -->
 <?php
 

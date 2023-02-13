@@ -8,6 +8,14 @@ $mongoClient = new MongoDB\Client("mongodb://localhost:27017");
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
 
+$username=$_SESSION['loggedInUsername'];
+
+//Create a PHP array with our search criteria
+$findCriteria = [
+    "username" => $username,
+];
+
+
 $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
 $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);
 $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);

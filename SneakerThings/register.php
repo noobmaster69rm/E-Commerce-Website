@@ -43,7 +43,7 @@ Navbar();
             </div>
             <div class="row">
                 <i class="fa-solid fa-fingerprint"></i>
-                <input type="password" placeholder="Password" id="reg-password" name="password">
+                <input type="password" placeholder="Password" id="reg-password" name="password2">
             </div>
             <div class="row button">
                 <button id="reg-btn" type="submit">Register</button>
@@ -62,8 +62,7 @@ Navbar();
     request.open();
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-    request.send("&FirstName=" + firstname.value + "&LastName=" + lastname.value
-        + "&Email=" + email.value + "&Password=" + password.value + "&Address=" + address.value + "PhoneNumber=" + number.value);
+    request.send();
 </script>
 
 <!-- Site footer -->
