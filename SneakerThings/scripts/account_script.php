@@ -4,7 +4,7 @@ session_start();
 
 include('../vendor/autoload.php');
 
-$mongoClient = new MongoDB\Client("mongodb://localhost:27017");
+$mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
 

@@ -45,8 +45,4 @@ function Register()
         window.alert("Please fill out all fields");
         return false;
     }
-    else {
-        alert("Registration Successful. Login with you credentials");
-    }
-
 }

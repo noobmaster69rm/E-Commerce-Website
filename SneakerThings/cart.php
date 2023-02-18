@@ -21,14 +21,14 @@ Navbar();
 <div class="main-container">
     <div class = "cart-container"><br><br><br><br>
         <table>
-        <!-- table row  -->
+            <!-- table row  -->
             <tr>
                 <th>Product</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
 
             </tr>
-        <!-- first product in cart -->
+            <!-- first product in cart -->
             <tr>
                 <td>
                     <div class ="cart-product">
@@ -46,7 +46,7 @@ Navbar();
                 <td><input type="number" value = "1"</td>
                 <td>Rs 2,500.00</td>
             </tr>
-        <!-- second product in cart -->
+            <!-- second product in cart -->
             <tr>
                 <td>
                     <div class ="cart-product">
@@ -66,7 +66,7 @@ Navbar();
             </tr>
 
 
-        <!-- third product in cart -->
+            <!-- third product in cart -->
             <tr>
                 <td>
                     <div class ="cart-product" alt = "cart product image">

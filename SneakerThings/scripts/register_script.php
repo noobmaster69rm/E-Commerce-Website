@@ -4,17 +4,9 @@ session_start();
 
 include('../vendor/autoload.php');
 
-$mongoClient = new MongoDB\Client("mongodb://localhost:27017");
+$mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
-
-$username=$_SESSION['loggedInUsername'];
-
-//Create a PHP array with our search criteria
-$findCriteria = [
-    "username" => $username,
-];
-
 
 $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_STRING);
 $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING);
@@ -22,6 +14,10 @@ $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
 $phone = filter_input(INPUT_POST, 'pnumber', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+
+$findCriteria = [
+    "Email" => $email,
+];
 
 $data = [
     "FirstName" => $fname,
@@ -32,7 +28,17 @@ $data = [
     "PhoneNumber" => $phone
 ];
 
-$insertData = $collection->insertOne($data);
-echo '<script>
-window.location.replace("../login.php");
-</script>';
+$resultArray = $db->Customer->count($findCriteria);
+
+if($resultArray == 0)
+{
+    $insertData = $collection->insertOne($data);
+    echo '<script>alert("Registration Successful. Login with you credentials");
+                  window.location.replace("../login.php");</script>';
+
+}
+
+else{
+    echo '<script>alert("Email already exists");
+                  window.location.replace("../register.php");</script>';
+}

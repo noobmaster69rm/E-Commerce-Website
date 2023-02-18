@@ -4,7 +4,7 @@
 include('common.php');
 
 //Output header
-outputHeader("Products");
+outputHeader("Shop");
 
 ?>
 <!-- Site header --> <?php
@@ -24,412 +24,75 @@ Navbar();
             <h1 class="shop-title">SHOP OUR NEW COLLECTION</h1>
             <p class="text-light">New trendy sketches just to match your summer outfits.</p>
             <div class="shop-product">
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-1.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">SKECHERS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">Bounder-Intread 232377-BBK</a>
-                        <p class="product-price">Rs 3,815.00</p>
-                        <p class="product-price">Rs 3,433.5</p>
-                    </div>
-                    <div class="off-info">
-                        <h2 class="sm-title">10% off</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-2.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">SKECHERS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">WOMEN'S SUMMITS UNO 232248-TPE</a>
-                        <p class="product-price">Rs 4,355.00</p>
-                        <p class="product-price">Rs 3,999.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-3.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">SKECHERS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">WOMEN'S SUMMITS - NEXT WAVE 149538-WBK</a>
-                        <p class="product-price">Rs 2,925.00</p>
-                        <p class="product-price">Rs 2,500.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-4.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">SKECHERS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">Flex Appeal 4.0 - Active Flow 149305-CCTQ</a>
-                        <p class="product-price">Rs 3,705.00</p>
-                        <p class="product-price">Rs 3,334.50</p>
-                    </div>
-                    <div class="off-info">
-                        <h2 class="sm-title">10% off</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-5.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">PUMA</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">Cali Star Glam Sneakers Women 38767902</a>
-                        <p class="product-price">Rs 5,540.00</p>
-                        <p class="product-price">Rs 5,000.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-6.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">PUMA</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">Slipstream Lux Sneakers 38755001</a>
-                        <p class="product-price">Rs 6,125.00</p>
-                        <p class="product-price">Rs 5,999.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-7.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">PUMA</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">CARINA 2.0 GLITZY JUNIOR SHOES 38618201</a>
-                        <p class="product-price">Rs 3,210.00</p>
-                        <p class="product-price">Rs 2,900.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <!-- single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-8.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">ADIDAS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">HOOPS MID SHOES GW0402</a>
-                        <p class="product-price">Rs 2,830.00</p>
-                        <p class="product-price">Rs 2,405.50</p>
-                    </div>
-                    <div class="off-info">
-                        <h2 class="sm-title">15% off</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-9.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">PUMA</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">Mayze Mid Safari Wns Putty 38368801</a>
-                        <p class="product-price">Rs 6,050.00</p>
-                        <p class="product-price">Rs 5,900.00</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-                <div class="product">
-                    <div class="product-content">
-                        <div class="product-img">
-                            <img src="assets/images/shoe-10.png" alt="product image">
-                        </div>
-                        <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
-                     <i class="fas fa-plus"></i>
-                     </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-top">
-                            <h2 class="sm-title">ADIDAS</h2>
-                            <div class="rating">
-                        <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="fas fa-star"></i>
-                        </span>
-                                <span>
-                        <i class="far fa-star"></i>
-                        </span>
-                            </div>
-                        </div>
-                        <a href="#" class="product-name">ST RUNNER SNEAKERS 38305504</a>
-                        <p class="product-price">Rs 3,025.00</p>
-                        <p class="product-price">Rs 2,500.00</p>
-                    </div>
-                </div>
+
+ <?php
+include('vendor/autoload.php');
+
+$mongoClient = new MongoDB\Client("mongodb://localhost:27017");
+$db = $mongoClient->SneakerThings;
+
+$name= filter_input(INPUT_GET, 'Brand', FILTER_SANITIZE_STRING);
+ $findCriteria = [
+     "Brand" => $name,
+ ];
+$cursor = $db->Products->find($findCriteria);
+$Productss = $db->Products->find();
+
+foreach ($Productss as $prods)
+{
+    echo '<div class="product">';
+    echo '                <div class="product-content">';
+    echo '                    <div class="product-img">';
+    echo '                        <img src="' .$prods["Url"]. '" alt="product image">';
+    echo '                   </div>';
+    echo '                    <div class="product-btns">';
+    echo '                        <button type="button" class="btn-cart" data-id="'.$prods['_id'].'"> add to cart <span>';
+    echo '                 <i class="fas fa-plus"></i>';
+    echo '                 </span>';
+    echo '                        </button>';
+    echo '                    </div>';
+    echo '                </div>';
+    echo '                <div class="product-info">';
+    echo '                    <div class="product-info-top">';
+    echo '                        <h2 class="sm-title">' .$prods["Brand"]. '</h2>';
+    echo '                        <div class="rating">';
+    echo '                    <span>';
+    echo '                    <i class="fas fa-star"></i>';
+    echo '                    </span>';
+    echo '                            <span>';
+    echo '                    <i class="fas fa-star"></i>';
+    echo '                    </span>';
+    echo '                            <span>';
+    echo '                    <i class="fas fa-star"></i>';
+    echo '                    </span>';
+    echo '                            <span>';
+    echo '                    <i class="fas fa-star"></i>';
+    echo '                    </span>';
+    echo '                            <span>';
+    echo '                    <i class="far fa-star"></i>';
+    echo '                    </span>';
+    echo '                        </div>';
+    echo '                    </div>';
+    echo '                    <a href="#" class="product-name">' .$prods["Description"]. '</a>';
+    echo '                    <p class="product-price">Rs ' .$prods["Price"]. '</p>';
+    echo '                </div>';
+    echo ' </div>';
+}
+?>
+                <script>
+                    $(document).on('click', '.btn-cart', function() {
+                        var productId = $(this).data('id');
+                        $.ajax({
+                            url: 'scripts/cart_script.php',
+                            method: 'POST',
+                            data: {"productId": productId},
+                            success: function(response) {
+                                alert('Product added to cart!');
+                            }
+                        });
+                    });
+                </script>
+
                 <!-- end of single product -->
             </div>
         </div>
@@ -448,7 +111,7 @@ Navbar();
                             <img src="assets/images/shoe-2.png" alt="product image">
                         </div>
                         <div class="product-btns">
-                            <button type="button" class="btn-cart"> add to cart <span>
+                            <button type="button" class="btn-cart" onclick="addToBasket()"> add to cart <span>
                      <i class="fas fa-plus"></i>
                      </span>
                             </button>
@@ -477,7 +140,6 @@ Navbar();
                         </div>
                         <a href="#" class="product-name">WOMEN'S SUMMITS UNO 232248-TPE</a>
                         <p class="product-price">Rs 4,355.00</p>
-                        <p class="product-price">Rs 3,999.00</p>
                     </div>
                 </div>
                 <!-- single product -->
