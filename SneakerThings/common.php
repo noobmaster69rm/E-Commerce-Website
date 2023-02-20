@@ -32,6 +32,7 @@ function Navbar()
     echo '  </ul>';
 
     echo '  <div class="icons">';
+    echo '    <a href="search.php"><img src="assets/images/search-svgrepo-com.svg" alt=""></a>';
     echo '    <a href="cart.php"><img src="assets/images/cart-svgrepo-com.svg" alt=""></a>';
     echo '    <a href="login.php"><img src="assets/images/profile-user-avatar-man-person-svgrepo-com.svg" alt=""></a>';
     echo '    <a href="account.php"><img src="assets/images/edit-attributes-svgrepo-com.svg" alt=""></a>';

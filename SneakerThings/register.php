@@ -43,7 +43,7 @@ Navbar();
             </div>
             <div class="row">
                 <i class="fa-solid fa-fingerprint"></i>
-                <input type="password" placeholder="Password" id="reg-password" name="password2">
+                <input type="password" placeholder="Password(Uppercase, lowercase, digit, special char" id="reg-password" name="password">
             </div>
             <div class="row button">
                 <button id="reg-btn" type="submit">Register</button>

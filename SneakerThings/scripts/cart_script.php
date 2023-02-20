@@ -1,11 +1,12 @@
 <?php
 session_start();
 
-include('../vendor/autoload.php');
+include('../../vendor/autoload.php');
 
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Cart;
+
 
 $productId = $_POST['productId'];
 

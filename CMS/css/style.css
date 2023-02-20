@@ -22,12 +22,18 @@ header{
 
 .menu{
     display: flex;
+    position: relative;
+    left: 10%;
 }
 
 .main{
     width: 400px;
     border-radius: 5px;
     background: white;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    top:10%;
 }
 
 .main .title {
@@ -100,6 +106,11 @@ a{
     width: 400px;
     border-radius: 5px;
     background: white;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    top:5%;
+
 }
 
 .main2 .title {
@@ -146,12 +157,10 @@ a{
     border: 1px solid #1979a9;
 }
 
-.main2 form .button input{
-    padding-left: 0;
-    background: #1979a9;
-    color: white;
-    font-size: 18px;
-    border: 1px solid #1979a9;
+#reg-btn{
+    padding: 10px;
+    position: relative;
+    left:40%;
 }
 
 table, th, td {
@@ -177,8 +186,8 @@ td, th {
 }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 .product{
@@ -196,6 +205,14 @@ img{
 
 .pdt-name{
     text-align: center;
+}
+
+.pdt-price{
+    text-align: center;
+}
+
+a{
+    text-decoration: underline;
 }
 
 

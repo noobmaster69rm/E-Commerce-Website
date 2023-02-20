@@ -11,7 +11,6 @@
 <! Header !>
 <header>
     <div class="menu">
-        <a href="home.php" class="logo">SneakerThings</a>
         <a href="home.php">Home</a>
         <a href="addProduct.php">Add Product</a>
         <a href="editProduct.html">Edit Product</a>
@@ -43,6 +42,7 @@
         <div class="row button">
             <button id="reg-btn" type="submit">Save</button>
         </div>
+        <a href="add_product_sale.php">Click to add sale product -></a>
     </form>
 </div>
 <script>

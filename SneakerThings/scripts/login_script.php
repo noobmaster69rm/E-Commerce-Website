@@ -3,7 +3,7 @@
 $email= filter_input(INPUT_POST, 'loginUsername', FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, 'loginPassword', FILTER_SANITIZE_STRING);
 
-include('../vendor/autoload.php');
+include('../../vendor/autoload.php');
 
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;

@@ -1,32 +1,25 @@
 <?php
 
-session_start();
-
-include('../vendor/autoload.php');
+include('../../vendor/autoload.php');
 
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
 
+$email= $_POST['email'];
 
-$address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
-$phone = filter_input(INPUT_POST, 'pnumber', FILTER_SANITIZE_STRING);
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
-$password = filter_input(INPUT_POST, 'password2', FILTER_SANITIZE_STRING);
+$result = $collection->findOne(['Email' => $email]);
 
-$findCriteria = [
-    "email" => $email,
-];
+if($result){
+    $updateData = array();
 
-$updated_data = [
-    'set' => [
-        "Email" => $email,
-        "Password" => $password,
-        "Address" => $address,
-        "PhoneNumber" => $phone
-    ]
-];
+    $updateData['Password'] = $_POST['password2'];
+    $updateData['Address'] = $_POST['address'];
+    $updateData['PhoneNumber'] = $_POST['pnumber'];
 
-$insertNewData = $collection->updateOne($findCriteria, $updated_data);
+    $collection->updateOne(['Email' => $email], ['$set' => $updateData]);
+}
 
-echo $email. "Profile updated";
+echo '<script>alert("Successful updated details");
+              window.location.replace("../login.php");
+      </script>';
