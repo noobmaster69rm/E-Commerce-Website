@@ -84,7 +84,7 @@ foreach ($Productss2 as $prods2) {
 
 <div class="big-container">
     <div class="sorting">
-        <p>Sort by: <a href="shop.php" name="sort">Brand</a><a href="shop.php" name="sort">Price</a></p>
+        <p>Sort by: <a href="shop.php">Brand</a><a href="shop.php" name="sort">Price</a></p>
     </div>
     <div class="products">
         <div class="container">
@@ -105,19 +105,15 @@ $brand= filter_input(INPUT_GET, 'Brand', FILTER_SANITIZE_STRING);
 $cursor = $db->Products->find($findCriteria);
 $Productss = $db->Products->find();
 
- if (isset($_GET['sort']) && $_GET['sort'] == 'price') {
-     // sort products by price
-     $cursor = $db->ProductsSale->find([], ['sort' => ['price' => 1]]);
- }
- else {
-     foreach ($Productss as $prods) {
-         echo '<div class="product">
+foreach ($Productss as $prods)
+{
+    echo '<div class="product">
             <div class="product-content">
                 <div class="product-img">
-                    <img src="' . $prods["Url"] . '" alt="product image">
+                    <img src="' .$prods["Url"]. '" alt="product image">
                 </div>
                 <div class="product-btns">
-                    <button type="button" class="btn-cart" data-id="' . $prods['_id'] . '"> add to cart <span>
+                    <button type="button" class="btn-cart" data-id="'.$prods['_id'].'"> add to cart <span>
                     <i class="fas fa-plus"></i>
                     </span>
                     </button>
@@ -125,7 +121,7 @@ $Productss = $db->Products->find();
             </div>
             <div class="product-info">
                 <div class="product-info-top">
-                    <h2 class="sm-title">' . $prods["Brand"] . '</h2>
+                    <h2 class="sm-title">' .$prods["Brand"]. '</h2>
                 <div class="rating">
                     <span>
                         <i class="fas fa-star"></i>
@@ -144,12 +140,11 @@ $Productss = $db->Products->find();
                     </span>
                 </div>
             </div>
-            <a href="#" class="product-name">' . $prods["Description"] . '</a>
-            <p class="product-price">Rs ' . $prods["Price"] . '</p>
+            <a href="#" class="product-name">' .$prods["Description"]. '</a>
+            <p class="product-price">Rs ' .$prods["Price"]. '</p>
         </div>
     </div>';
-     }
- }
+}
 ?>
                 <script>
                     $(document).on('click', '.btn-cart', function() {

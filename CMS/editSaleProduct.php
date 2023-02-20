@@ -13,8 +13,7 @@
     <div class="menu">
         <a href="home.php">Home</a>
         <a href="addProduct.php">Add Product</a>
-        <a href="editProduct.html">Edit Product</a>
-        <a href="customerOrders.html">Orders</a>
+        <a href="editProduct.php">Edit Product</a>
         <a href="#">Logout</a>
     </div>
 </header>
@@ -45,7 +44,7 @@
         <div class="row button">
             <button id="reg-btn" type="submit">Save</button>
         </div>
-        <a href="editProduct.html">Click to edit normal product -></a>
+        <a href="editProduct.php">Click to edit normal product -></a>
     </form>
 </div>
 
