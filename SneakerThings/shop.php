@@ -83,14 +83,15 @@ foreach ($Productss2 as $prods2) {
 </div>
 
 <div class="big-container">
-    <div class="sorting">
-        <p>Sort by: <a href="shop.php">Brand</a><a href="shop.php" name="sort">Price</a></p>
-    </div>
     <div class="products">
         <div class="container">
             <h1 class="shop-title">SHOP OUR NEW COLLECTION</h1>
-            <p class="text-light">New trendy sketches just to match your summer outfits.</p>
+            <p class="text-light">New trendy sketches just to match your summer outfits.<br><br></p>
+            <div class="sorting">
+                <p>Sort by: <a href="shop.php?link=1">Descending Price</a><a href="shop.php?link=2">Ascending Price</a></p>
+            </div>
             <div class="shop-product">
+
 
  <?php
 include('vendor/autoload.php');
@@ -105,9 +106,16 @@ $brand= filter_input(INPUT_GET, 'Brand', FILTER_SANITIZE_STRING);
 $cursor = $db->Products->find($findCriteria);
 $Productss = $db->Products->find();
 
-foreach ($Productss as $prods)
-{
-    echo '<div class="product">
+$optionsAsc = ['sort' => ['Price' => 1]];
+$optionsDsc = ['sort' => ['Price' => -1]];
+
+$productsAscending = $db->Products->find([], $optionsAsc);
+$productsDescending = $db->Products->find([], $optionsDsc);
+
+if($_GET['link']=='1'){
+     foreach ($productsDescending as $prods)
+     {
+         echo '<div class="product">
             <div class="product-content">
                 <div class="product-img">
                     <img src="' .$prods["Url"]. '" alt="product image">
@@ -144,6 +152,93 @@ foreach ($Productss as $prods)
             <p class="product-price">Rs ' .$prods["Price"]. '</p>
         </div>
     </div>';
+     }
+ }
+
+else if($_GET['link']=='2'){
+    foreach ($productsAscending as $prods)
+    {
+        echo '<div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="' .$prods["Url"]. '" alt="product image">
+                </div>
+                <div class="product-btns">
+                    <button type="button" class="btn-cart" data-id="'.$prods['_id'].'"> add to cart <span>
+                    <i class="fas fa-plus"></i>
+                    </span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-info-top">
+                    <h2 class="sm-title">' .$prods["Brand"]. '</h2>
+                <div class="rating">
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="far fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <a href="#" class="product-name">' .$prods["Description"]. '</a>
+            <p class="product-price">Rs ' .$prods["Price"]. '</p>
+        </div>
+    </div>';
+    }
+}
+
+else{
+    foreach ($Productss as $prods)
+    {
+        echo '<div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="' .$prods["Url"]. '" alt="product image">
+                </div>
+                <div class="product-btns">
+                    <button type="button" class="btn-cart" data-id="'.$prods['_id'].'"> add to cart <span>
+                    <i class="fas fa-plus"></i>
+                    </span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-info-top">
+                    <h2 class="sm-title">' .$prods["Brand"]. '</h2>
+                <div class="rating">
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="far fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <a href="#" class="product-name">' .$prods["Description"]. '</a>
+            <p class="product-price">Rs ' .$prods["Price"]. '</p>
+        </div>
+    </div>';
+    }
 }
 ?>
                 <script>
