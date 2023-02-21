@@ -26,7 +26,7 @@ outputHeader("About");
                 <p class="titles">Founder</p>
                 <p>Founded SneakerThings in 2023 afterwards leading all roles and decisions to the sucess of SneakerThings.   </p>
                 <p>VR281@live.mdx.ac.uk</p><br>
-                <p><button class="email">Reach Out</button></p>
+                <p><button class="email2">Reach Out</button></p>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@ outputHeader("About");
                 <p class="titles">Marketing</p>
                 <p>Heads the marketing team and handles recruiting for different sectors of SneakerThings  </p>
                 <p>AR1658@live.mdx.ac.uk</p><br><br>
-                <p><button class="email">Reach Out</button></p>
+                <p><button class="email2">Reach Out</button></p>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@ outputHeader("About");
                 <p class="titles">Liaison</p>
                 <p>Handles building and maintaining mutually beneficial relationships, facilitating communication and co-ordinating activities </p>
                 <p>JK1125@live.mdx.ac.uk</p><br>
-                <p><button class="email">Reach Out</button></p>
+                <p><button class="email2">Reach Out</button></p>
             </div>
         </div>
     </div>

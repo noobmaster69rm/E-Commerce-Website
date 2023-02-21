@@ -185,7 +185,7 @@ footer{
 .cards {
     box-shadow: 0 5px 9px 0 rgba(33, 32, 32, 0.2);
     margin: 25px 0 0 130px;
-    height: 28%;
+    height: 30%;
 }
 .about-us {
     padding: 60px;
@@ -203,7 +203,7 @@ footer{
 .titles {
     color: rgba(128, 128, 128, 0.887);
 }
-.email {
+.email2 {
     border: none;
     outline: 0;
     display: inline-block;

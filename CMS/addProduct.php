@@ -36,7 +36,7 @@
             <input type="text" placeholder="Keywords" name="keywords" required>
         </div>
         <div class="row">
-            <input type="text" placeholder="Image URL" name="url" required>
+            <input type="text" placeholder="Image URL (assets/images/shoeimage)" name="url" required>
         </div>
         <div class="row button">
             <button id="reg-btn" type="submit">Save</button>
