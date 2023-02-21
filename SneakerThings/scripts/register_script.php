@@ -1,9 +1,9 @@
 <?php
 
-session_start();
-
+//Include libraries
 include('../../vendor/autoload.php');
 
+//Create instance of MongoDB client, selecting database and collection(s)
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
@@ -30,12 +30,12 @@ $data = [
 
 $resultArray = $db->Customer->count($findCriteria);
 
+//Check if email already exists in db, if so, display error, else create new user
 if($resultArray == 0)
 {
     $insertData = $collection->insertOne($data);
     echo '<script>alert("Registration Successful. Login with you credentials");
                   window.location.replace("../login.php");</script>';
-
 }
 
 else{

@@ -46,6 +46,7 @@ Navbar();
     </div>
 </div>
 
+<!-- AJAX script to send form data to backend -->
 <script>
     let request = new XMLHttpRequest();
     request.open();

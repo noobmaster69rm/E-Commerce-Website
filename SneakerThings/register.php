@@ -57,6 +57,8 @@ Navbar();
         </form>
     </div>
 </div>
+
+<!-- AJAX script to send form data to backend -->
 <script src="js/register.js">
     let request = new XMLHttpRequest();
     request.open();

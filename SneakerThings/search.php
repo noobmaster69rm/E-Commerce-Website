@@ -12,8 +12,10 @@ outputHeader("Shop");
 //Output the navigation bar
 Navbar();
 
+//Include libraries
 include('../vendor/autoload.php');
 
+//Create instance of MongoDB client, selecting database and collection(s)
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Products;
@@ -25,7 +27,7 @@ if (isset($_GET['search'])) {
 } else {
     $search_query = '';
 }
-
+//Search for matching results and if no data entered, display all products
 if (!empty($search_query)) {
     $results = $collection->find(
         ['Keywords' => ['$regex' => $search_query, '$options' => 'i']]
@@ -51,6 +53,7 @@ if (!empty($search_query)) {
 
 <?php
 
+//finding products based on search criterias and displaying matching products
 foreach ($results as $prods){
     echo '<div class="product">
             <div class="product-content">
@@ -93,6 +96,7 @@ foreach ($results as $prods){
 ?>
 <?php
 
+//finding products based on search criterias and displaying matching products on sale
 foreach ($results2 as $prods2) {
     echo '<div class="product">
                             <div class="product-content">

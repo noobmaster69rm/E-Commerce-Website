@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>confirmation_Page</title>
+
+    <style>
+        body{
+            min-height: 96vh;
+            background: white;
+            font-family: Helvetica;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .order_placed_text{
+            text-align: center;
+            font-size: 35px;
+            width: 49%;
+            display: block;
+            line-height: 49px;
+            margin: 29px auto 61px;
+            text-transform: capitalize;
+
+        }
+        .orderPlaced span{
+            font-weight: 299;
+        }
+        .continue_button{
+            width: 280px;
+            height: 49px;
+            border-radius: 6px;
+            background: orangered;
+            color: white;
+            display: block;
+            margin:auto;
+            font-size: 19px;
+            text-transform: capitalize;
+
+
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <h1 class="order_placed_text">Your Order has been received,<span>Thank you for your purchase!</span></h1>
+
+    <button class="continue_button" onclick="window.location.href='index.php';">Continue Shopping</button>
+</div>
+
+</body>

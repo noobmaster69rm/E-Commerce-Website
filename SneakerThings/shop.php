@@ -7,7 +7,8 @@ include('common.php');
 outputHeader("Shop");
 
 ?>
-<!-- Site header --> <?php
+<!-- Site header -->
+<?php
 //Output the navigation bar
 Navbar();
 
@@ -29,6 +30,7 @@ $db = $mongoClient->SneakerThings;
 
 $Productss2 = $db->ProductsSale->find();
 
+//Loading products on sale from db and outputting on page
 foreach ($Productss2 as $prods2) {
                     echo '<div class="product">
                             <div class="product-content">
@@ -97,12 +99,14 @@ $db = $mongoClient->SneakerThings;
 
 $Productss = $db->Products->find();
 
+// Sorting Collections by ascending/descending price
 $optionsAsc = ['sort' => ['Price' => 1]];
 $optionsDsc = ['sort' => ['Price' => -1]];
 
 $productsAscending = $db->Products->find([], $optionsAsc);
 $productsDescending = $db->Products->find([], $optionsDsc);
 
+// load products from db, sort by descending and display products
 if($_GET['link']=='1'){
      foreach ($productsDescending as $prods)
      {
@@ -146,6 +150,7 @@ if($_GET['link']=='1'){
      }
  }
 
+// load products from db, sort by ascending and display products
 else if($_GET['link']=='2'){
     foreach ($productsAscending as $prods)
     {
@@ -189,6 +194,7 @@ else if($_GET['link']=='2'){
     }
 }
 
+//Display products without sorting
 else{
     foreach ($Productss as $prods)
     {
@@ -232,6 +238,7 @@ else{
     }
 }
 ?>
+                <!-- AJAX script to send form data to backend -->
                 <script>
                     $(document).on('click', '.btn-cart', function() {
                         var productId = $(this).data('id');

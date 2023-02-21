@@ -1,8 +1,9 @@
 <?php
-session_start();
 
+//Include libraries
 include('../../vendor/autoload.php');
 
+//Create instance of MongoDB client, selecting database and collection(s)
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Cart;

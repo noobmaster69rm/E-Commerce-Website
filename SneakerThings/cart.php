@@ -26,6 +26,7 @@ Navbar();
     $cart = $db->Cart->find();
     $collection = $db->Orders;
 
+    //Load cart items from mongodb
 
 foreach ($cart as $basket) {
     echo '<br><br><br><br><div class=items>
@@ -38,12 +39,13 @@ foreach ($cart as $basket) {
 </div>';
 }
 ?>
-    <br><br><form method="post">
+    <br><br><form method="post" action="confirmation.html">
         <input type="submit" name="buy" value="Buy now" class="cart-btn">
     </form>
 </div>
 
 <?php
+// On clicking buy now button, send data to mongodb
 if(array_key_exists('buy', $_POST)){
     $data= ["product-id" => $basket["product_id"], "Quantity" => $basket["quantity"]];
 

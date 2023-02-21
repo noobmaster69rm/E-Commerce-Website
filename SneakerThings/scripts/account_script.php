@@ -1,15 +1,19 @@
 <?php
 
+//Include libraries
 include('../../vendor/autoload.php');
 
+//Create instance of MongoDB client, selecting database and collection(s)
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Customer;
 
 $email= $_POST['email'];
 
+//compare email in form to email in database
 $result = $collection->findOne(['Email' => $email]);
 
+//array to store form data
 if($result){
     $updateData = array();
 
