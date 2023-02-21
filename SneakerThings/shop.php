@@ -26,11 +26,7 @@ include('../vendor/autoload.php');
 
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
-$brand2= filter_input(INPUT_GET, 'Brand', FILTER_SANITIZE_STRING);
-$findCriteria2 = [
-    "Brand" => $brand2,
-];
-$cursor2 = $db->ProductsSale->find($findCriteria2);
+
 $Productss2 = $db->ProductsSale->find();
 
 foreach ($Productss2 as $prods2) {
@@ -99,11 +95,6 @@ include('vendor/autoload.php');
 $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 
-$brand= filter_input(INPUT_GET, 'Brand', FILTER_SANITIZE_STRING);
- $findCriteria = [
-     "Brand" => $brand,
- ];
-$cursor = $db->Products->find($findCriteria);
 $Productss = $db->Products->find();
 
 $optionsAsc = ['sort' => ['Price' => 1]];
@@ -204,7 +195,7 @@ else{
         echo '<div class="product">
             <div class="product-content">
                 <div class="product-img">
-                    <img src="' .$prods["Url"]. '" alt="product image">
+                    <img src="' .$prods["Url"]. '" alt="product image" data-url="' .$prods["Url"]. '">
                 </div>
                 <div class="product-btns">
                     <button type="button" class="btn-cart" data-id="'.$prods['_id'].'"> add to cart <span>

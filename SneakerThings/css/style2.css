@@ -231,7 +231,7 @@ footer{
     position: relative;
     left: 30%;
     width: 36%;
-    height: 65%;
+    min-height: 65%;
     background: rgba(255, 255, 255, .95);
 }
 
@@ -566,4 +566,9 @@ button:hover{
     color: white;
     top: 20%;
     left: 5%;
+}
+
+.cart-btn{
+    width: 100px;
+    height: 40px;
 }

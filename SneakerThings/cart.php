@@ -17,7 +17,40 @@ Navbar();
 
 //Main body
 ?>
+<div class="cart-container">
+<?php
+    include('../vendor/autoload.php');
+    $mongoClient = (new MongoDB\Client);
+    $db = $mongoClient->SneakerThings;
 
+    $cart = $db->Cart->find();
+    $collection = $db->Orders;
+
+
+foreach ($cart as $basket) {
+    echo '<br><br><br><br><div class=items>
+          <div class="item-id">
+          <p>Item-id: ' .$basket["product_id"] .'</p>
+</div>
+<div class="item-quantity">
+          <p>Item-quantity: ' .$basket["quantity"] .'</p>
+</div>
+</div>';
+}
+?>
+    <br><br><form method="post">
+        <input type="submit" name="buy" value="Buy now" class="cart-btn">
+    </form>
+</div>
+
+<?php
+if(array_key_exists('buy', $_POST)){
+    $data= ["product-id" => $basket["product_id"], "Quantity" => $basket["quantity"]];
+
+    $insertData = $collection->insertOne($data);
+    echo '<script>alert("Order saved")';
+};
+?>
 
 <!-- Site footer -->
 <?php

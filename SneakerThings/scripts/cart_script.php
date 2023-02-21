@@ -7,7 +7,6 @@ $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->SneakerThings;
 $collection = $db->Cart;
 
-
 $productId = $_POST['productId'];
 
 // Check if the product is already in the cart
@@ -20,5 +19,3 @@ if ($cartItem) {
     // Add the product to the cart
     $collection->insertOne(['product_id' => $productId, 'quantity' => 1]);
 }
-
-echo 'success';
